@@ -5,7 +5,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 
 # Initialize the ChatGoogleGenerativeAI instance
-os.environ["GOOGLE_API_KEY"] = "AIzaSyD8rf2XNEHQGrWb4U2V9MzTUSZmvXrFJ38"
+os.environ["GOOGLE_API_KEY"] = ""
 llm = ChatGoogleGenerativeAI(model="gemini-1.0-pro")
 
 from PIL import Image
