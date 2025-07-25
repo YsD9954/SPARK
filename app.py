@@ -11,7 +11,7 @@ import pandas as pd;
 
 
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyD8rf2XNEHQGrWb4U2V9MzTUSZmvXrFJ38"
+os.environ["GOOGLE_API_KEY"] = ""
 
 
 
@@ -64,7 +64,7 @@ st.title("M.E.D.I.C")
 # import json
 # import requests
 #
-# cred = credentials.Certificate("softies-1d56d-77a0938371d4.json")
+# cred = credentials.Certificate("")
 # firebase_admin.initialize_app(cred)
 #
 #
@@ -88,7 +88,7 @@ st.title("M.E.D.I.C")
 #             if username:
 #                 payload["displayName"] = username
 #             payload = json.dumps(payload)
-#             r = requests.post(rest_api_url, params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"}, data=payload)
+#             r = requests.post(rest_api_url, params={"key": ""}, data=payload)
 #             try:
 #                 return r.json()['email']
 #             except:
@@ -109,7 +109,7 @@ st.title("M.E.D.I.C")
 #                 payload["password"] = password
 #             payload = json.dumps(payload)
 #             print('payload sigin', payload)
-#             r = requests.post(rest_api_url, params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"}, data=payload)
+#             r = requests.post(rest_api_url, params={"key": ""}, data=payload)
 #             try:
 #                 data = r.json()
 #                 user_info = {
@@ -130,7 +130,7 @@ st.title("M.E.D.I.C")
 #                 "requestType": "PASSWORD_RESET"
 #             }
 #             payload = json.dumps(payload)
-#             r = requests.post(rest_api_url, params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"}, data=payload)
+#             r = requests.post(rest_api_url, params={"key": ""}, data=payload)
 #             if r.status_code == 200:
 #                 return True, "Reset email Sent"
 #             else:
